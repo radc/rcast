@@ -13,6 +13,7 @@
   }
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -28,11 +29,31 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.socialLogos{
+  width: 25px;
 }
+
+a{
+  text-decoration: none;
+}
+a:visited{
+  
+}
+
+.colSocial{
+  background-color: white;
+  color: black;
+  margin-bottom: 10px;
+  
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.colSocial:hover{
+  background-color: aqua;
+  
+}
+
+
+
