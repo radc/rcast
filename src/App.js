@@ -55,7 +55,7 @@ function App() {
 function CustomisedRow(curr) {
   return (
     <Row key={curr.key}>
-      <a href={curr.link} target="_blank">
+      <a href={curr.link} target="_blank" rel="noreferrer">
       <Col className="colSocial" md={{span : 4, offset : 4}}>
         <Image className='socialLogos' src={curr.logo} alt="" />
         {"  "}
