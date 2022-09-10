@@ -6,12 +6,6 @@ import { Col, Container, Image, Row } from 'react-bootstrap';
 var socials = [
   {
     key: '1',
-    logo: './logos/twitch.png',
-    link: "https://www.twitch.tv/rcasttv",
-    name: "Twitch"
-  },
-  {
-    key: '2',
     logo: "./logos/youtube.png",
     link: "https://www.youtube.com/channel/UCPuFoC6ju6QXGvuT4dCHxYg",
     name: "YouTube"  
@@ -23,16 +17,34 @@ var socials = [
     name: "Instagram" 
   },
   {
-    key: '4',
-    logo: "./logos/twitter.png",
-    link: "https://twitter.com/rcasttv",
-    name: "Twitter" 
+    key: '2',
+    logo: './logos/twitch.png',
+    link: "https://www.twitch.tv/rcasttv",
+    name: "Twitch"
   },
   {
     key: '5',
     logo: "./logos/facebook.png",
     link: "https://www.facebook.com/rcasttv",
     name: "Facebook" 
+  },  
+  {
+    key: '4',
+    logo: "./logos/twitter.png",
+    link: "https://twitter.com/rcasttv",
+    name: "Twitter" 
+  },  
+  {
+    key: '6',
+    logo: "./logos/dlive.png",
+    link: "https://dlive.tv/RCastTV",
+    name: "DLive" 
+  },
+  {
+    key: '7',
+    logo: "./logos/telegram.png",
+    link: "https://t.me/+1yIWPCO7MbE4ZDUx",
+    name: "Telegram" 
   }
 ]
 
@@ -54,12 +66,12 @@ function App() {
 
 function CustomisedRow(curr) {
   return (
-    <Row key={curr.key}>
+    <Row key={curr.key} className='container-social'>
       <a href={curr.link} target="_blank" rel="noreferrer">
       <Col className="colSocial" md={{span : 4, offset : 4}}>
         <Image className='socialLogos' src={curr.logo} alt="" />
         {"  "}
-        {curr.name}
+        <span className='social-text'>{curr.name}</span>
       </Col>
       </a>
     </Row>
